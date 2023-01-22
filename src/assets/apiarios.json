@@ -1,0 +1,116 @@
+[
+  {
+      "id": 4,
+      "nome": "Apiario Florada Bela",
+      "endereco": {
+          "cep": "58900-000",
+          "localidade": "Cajazeiras",
+          "uf": "PB"
+      },
+      "colmeias": [
+          {
+              "nome": "Colmeia Africana_01",
+              "especie": "Apis mellifera",
+              "florada": "Laranjeira"
+          },
+          {
+              "nome": "Colmeia Africana_02",
+              "especie": "Apis mellifera",
+              "florada": "Laranjeira"
+          },
+          {
+              "nome": "Colmeia Africana_03",
+              "especie": "Apis mellifera",
+              "florada": "Laranjeira"
+          },
+          {
+              "nome": "Colmeia Africana_4",
+              "especie": "Apis mellifera",
+              "florada": "Laranjeira"
+          }
+      ]
+  },
+  {
+      "id": 5,
+      "nome": "Apiario Flores do Sol",
+      "endereco": {
+          "cep": "58038-330",
+          "localidade": "João Pessoa",
+          "uf": "PB"
+      },
+      "colmeias": [
+          {
+              "nome": "Colmeia Jatai_01",
+              "especie": "Tetragonisca angustula",
+              "florada": "Flores Silvestres"
+          },
+          {
+              "nome": "Colmeia Jatai_02",
+              "especie": "Tetragonisca angustula",
+              "florada": "Flores Silvestres"
+          },
+          {
+              "nome": "Colmeia Jatai_03",
+              "especie": "Tetragonisca angustula",
+              "florada": "Flores Silvestres"
+          }
+      ]
+  },
+  {
+      "id": 7,
+      "nome": "Apiario Mel do Cerrado",
+      "endereco": {
+          "cep": "58500-000",
+          "localidade": "Monteiro",
+          "uf": "PB"
+      },
+      "colmeias": [
+          {
+              "nome": "Colmeia Urucu_01",
+              "especie": "Melipona rufiventris",
+              "florada": "Flores do Cerrado"
+          },
+          {
+              "nome": "Colmeia Urucu_02",
+              "especie": "Melipona rufiventris",
+              "florada": "Flores do Cerrado"
+          },
+          {
+              "nome": "Colmeia Urucu_03",
+              "especie": "Melipona rufiventris",
+              "florada": "Flores do Cerrado"
+          }
+      ]
+  },
+  {
+      "id": 8,
+      "nome": "Apiario Mel do Campo",
+      "endereco": {
+          "cep": "58200-000",
+          "localidade": "Guarabira",
+          "uf": "PB"
+      },
+      "colmeias": [
+          {
+              "nome": "Colmeia Mielera_01",
+              "especie": "Melipona scutellaris",
+              "florada": "Flores do Campo"
+          },
+          {
+              "nome": "Colmeia Mielera_04",
+              "especie": "Melipona scutellaris",
+              "florada": "Flores do Campo"
+          },
+          {
+              "nome": "Colmeia Mielera_03",
+              "especie": "Melipona scutellaris",
+              "florada": "Flores do Campo"
+          },
+          {
+              "nome": "Colmeia Mielera_02",
+              "especie": "Melipona scutellaris",
+              "florada": "Flores do Campo"
+          }
+      ]
+  }
+]

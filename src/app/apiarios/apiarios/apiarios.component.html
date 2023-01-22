@@ -1,0 +1,69 @@
+<mat-card>
+  <mat-toolbar color="primary">Apíarios Cadastrados</mat-toolbar>
+
+  <div *ngIf="apiarios$ | async as apiarios; else loading">
+    <table mat-table [dataSource]="apiarios" class="mat-elevation-z8">
+      <!-- Nome Column -->
+      <ng-container matColumnDef="Nome">
+        <th mat-header-cell *matHeaderCellDef>Nome</th>
+        <td mat-cell *matCellDef="let apiario">
+          {{ apiario.nomeApiario }}
+          <mat-icon aria-hidden="false" aria-label="Colmeia">
+            {{ apiario.nomeApiario | category }}
+          </mat-icon>
+        </td>
+      </ng-container>
+
+      <!-- Endereço Column -->
+      <ng-container matColumnDef="Estado">
+        <th mat-header-cell *matHeaderCellDef>Estado</th>
+        <td mat-cell *matCellDef="let apiario">{{ apiario.estado }}</td>
+      </ng-container>
+
+      <!-- ColmeiaNome Column -->
+      <ng-container matColumnDef="Nome colmeia">
+        <th mat-header-cell *matHeaderCellDef>Nome colmeia</th>
+        <td mat-cell *matCellDef="let apiario">
+          {{ apiario.nomeColmeia }}
+          <!-- <mat-icon aria-hidden="false" aria-label="Colmeia"> {{apiario.nomeColmeia | category}} </mat-icon> -->
+        </td>
+      </ng-container>
+
+      <!-- ColmeiaEspecie Column -->
+      <ng-container matColumnDef="Especie Colmeia">
+        <th mat-header-cell *matHeaderCellDef>Especie Colmeia</th>
+        <td mat-cell *matCellDef="let apiario">
+          {{ apiario.especieColmeia }}
+          <!-- <mat-icon aria-hidden="false" aria-label="Colmeia"> {{apiario.especieColmeia | category}} </mat-icon> -->
+        </td>
+      </ng-container>
+
+      <!-- ColmeiaFlorada Column -->
+      <ng-container matColumnDef="Florada Colmeia">
+        <th mat-header-cell *matHeaderCellDef>Florada Colmeia</th>
+        <td mat-cell *matCellDef="let apiario">
+          {{ apiario.floradaColmeia }}
+          <!-- <mat-icon aria-hidden="false" aria-label="Colmeia"> {{apiario.floradaColmeia | category}} </mat-icon> -->
+        </td>
+      </ng-container>
+
+      <ng-container matColumnDef="Ações">
+        <th mat-header-cell *matHeaderCellDef>Gerenciar</th>
+        <td mat-cell *matCellDef="let apiario">
+          <button mat-icon-button>
+            <mat-icon>control_point</mat-icon>
+          </button>
+        </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+    </table>
+  </div>
+
+  <ng-template #loading>
+    <div class="loading-spinner">
+      <mat-spinner></mat-spinner>
+    </div>
+  </ng-template>
+</mat-card>
